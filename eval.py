@@ -450,7 +450,7 @@ if __name__ == '__main__':
         scores_5 = global_query_5 @ global_target_5.T
         scores_5_1 = global_query_5_1 @ global_target_5_1.T
 
-        # scores = scores_1 * 0.65 + scores_2 * 0.25 + scores_4 * 0.15 # first
+        # scores = scores_1 * 0.65 + scores_2 * 0.25 + scores_4 * 0.10 # first
         scores = scores_1 * 0.37 + scores_2 * 0.26 + scores_5_1 * 0.37 # final
         # get_exinfomation(args, scores)
         get_exrank(args, scores)
