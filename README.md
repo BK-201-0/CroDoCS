@@ -1,4 +1,4 @@
-# Hybrid-CS
+# CroDoCS
 ### Project Structure
 ```bash
 -data # datasets and generated data
