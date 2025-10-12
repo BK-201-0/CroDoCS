@@ -9,13 +9,18 @@
 ```
 
 ### Model
-We use the following models:
+We use the following LLM to generate comments and requirement descriptions:
+* [DeepSeek-Coder-1.3b-Instruct](https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct)
+
+We use the following models for embedding:
 * [CoCoSoDa](https://huggingface.co/DeepSoftwareAnalytics/CoCoSoDa)
 * [UniXcoder](https://huggingface.co/microsoft/unixcoder-base)
 * [bge-large-en-v1.5](https://huggingface.co/BAAI/bge-large-en-v1.5)
 
-### LLMs
-The large models we use include [DeepSeek-Coder-1.3b-Instruct](https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct), gpt-4.1-mini, deepseek-v3, and qwen-plu. The latter three are accessed via APIs.
+We use the following LLMs for query expansion(These models are accessed via APIs):
+* [Qwen-Plus](https://yunwu.ai/)
+* [DeepSeek-V3](https://yunwu.ai/)
+* [GPT-4.1-mini](https://yunwu.ai/)
 
 ### Environment
 * `python==3.8.18`
